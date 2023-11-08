@@ -5,7 +5,7 @@ from googleapiclient.discovery import build
 from datetime import datetime, timedelta
 
 # 環境変数の設定
-youtube_api_key = st.secrets.youtube_api.key
+youtube_api_key = st.secrets["key"]
 
 # YouTube Data APIのキーをセット
 youtube = build('youtube', 'v3', developerKey=youtube_api_key)
